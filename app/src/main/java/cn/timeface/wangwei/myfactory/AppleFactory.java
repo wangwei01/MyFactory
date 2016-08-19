@@ -5,11 +5,9 @@ package cn.timeface.wangwei.myfactory;
  */
 public class AppleFactory extends FruitFactory {
     @Override
-    public Fruit createFruit(String type) {
-        if (type.equals("apple")) {
-            Fruit fruit = new Apple();
-            return fruit;
-        }
-        return null;
+    public Fruit createFruit() {
+        Fruit fruit = new Apple();
+        return fruit;
     }
+
 }

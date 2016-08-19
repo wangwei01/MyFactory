@@ -5,10 +5,10 @@ package cn.timeface.wangwei.myfactory;
  */
 public abstract class FruitFactory {
 
-    public Fruit orderFruit(String  type){
-        Fruit fruit = createFruit(type );
+    public Fruit orderFruit(){
+        Fruit fruit = createFruit( );
         return fruit;
     }
 
-    public abstract Fruit createFruit(String  type);
+    public abstract Fruit createFruit();
 }
